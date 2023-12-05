@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% block title %}PREGUNTA 7{% endblock %}
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Profesor</th>
+            <th scope="col">Asignatura</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in raw %}
+        <tr>
+            <td>{{item[0]}}</td>
+            <td>{{item[1]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
